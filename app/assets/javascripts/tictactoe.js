@@ -49,7 +49,7 @@ function saveGame() {
 
   if (currentGame) {
     $.ajax({
-      type: 'POST',
+      type: 'PATCH',
       url: `/games/${currentGame}`,
       data: gameData
     });
